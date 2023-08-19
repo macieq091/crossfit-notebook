@@ -1,4 +1,5 @@
-import { Fragment } from 'react';
+import { Fragment } from 'react'
+
 import classes from '../layout/Header.module.css'
 
 const Header = props => {
@@ -6,10 +7,12 @@ const Header = props => {
 		<Fragment>
 			<header className={classes.header}>
 				<h1>Crossfit notebook</h1>
-			</header>
 			
+
+				
+			</header>
 		</Fragment>
 	)
 }
 
-export default Header;
+export default Header
