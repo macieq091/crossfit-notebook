@@ -1,21 +1,21 @@
+
 import Header from './components/layout/Header'
+import Input from './components/ui/Input'
 import Main from './components/layout/Main'
 
-import classes from './App.css'
 import { Fragment } from 'react'
+
 
 function App() {
 	return (
-	<Fragment>
-    <Header />
-      <Main />
-
-  </Fragment>
+		<Fragment>
 			
-        
-     
-      
-	
+				<Header />
+				<Input />
+				
+				<Main />
+		
+		</Fragment>
 	)
 }
 

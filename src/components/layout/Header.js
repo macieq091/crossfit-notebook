@@ -2,14 +2,11 @@ import { Fragment } from 'react'
 
 import classes from '../layout/Header.module.css'
 
-const Header = props => {
+const Header = () => {
 	return (
 		<Fragment>
 			<header className={classes.header}>
-				<h1>Crossfit notebook</h1>
-			
-
-				
+				<h1 className={classes.appName}>Crossfit notebook</h1>
 			</header>
 		</Fragment>
 	)
