@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 
+
 import classes from '../layout/Header.module.css'
 
 const Header = () => {
@@ -7,6 +8,7 @@ const Header = () => {
 		<Fragment>
 			<header className={classes.header}>
 				<h1 className={classes.appName}>Crossfit notebook</h1>
+				
 			</header>
 		</Fragment>
 	)
