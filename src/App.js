@@ -1,5 +1,5 @@
 
-import Header from './components/layout/Header'
+
 import Input from './components/ui/Input'
 import Main from './components/layout/Main'
 import Nav from './components/ui/NavBar'
