@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import logo from '../../assets/images/logo.png'
 
 
 const Nav = () => {
@@ -7,12 +8,12 @@ const Nav = () => {
     return (
         <div className="flex items-center justify-between border-b border-gray-400 py-8">
           <a href="/">
-            <img src="images/logo-black.png" alt="App logo"/>
+            <img src={logo} alt="App logo" className='h-40 w-40'/>
           </a>
           <nav>
             <section className="MOBILE-MENU flex lg:hidden">
               <div
-                className="HAMBURGER-ICON space-y-2"
+                className="HAMBURGER-ICON absolute space-y-2 right-6 "
                 onClick={() => setIsNavOpen((prev) => !prev)} 
               >
                 <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
@@ -52,7 +53,7 @@ const Nav = () => {
               </div>
             </section>
     
-            <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
+            <ul className="DESKTOP-MENU hidden space-x-8 lg:flex absolute right-10">
               <li>
                 <a href="/about">About</a>
               </li>
