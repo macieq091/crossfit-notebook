@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* .root,
+#root,
+#docs-root {
+    --primary-color: 250, 155, 120;
+    --secondary-color: 255, 182, 146;
+    --tertinar-color: 155, 210, 174;
+    --quaternary-color: 255, 255, 228;
+} */

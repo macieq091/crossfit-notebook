@@ -4,7 +4,16 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "primary-color": "var(--primary-color)",
+        "secondary-color": "var(--secondary-color)",
+        "tertinary-color": "var(--tertinary-color)",
+        "quaternary-color": "var(--quaternary-color)",
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@mertasan/tailwindcss-variables')
+  ],
 }

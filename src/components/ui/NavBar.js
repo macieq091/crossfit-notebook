@@ -6,7 +6,7 @@ import logo from '../../assets/images/logo.png'
 const Nav = () => {
     const [isNavOpen, setIsNavOpen] = useState(false)
     return (
-        <div className="flex items-center justify-between border-b border-gray-400 py-8">
+        <div className="flex items-center justify-between bg-orange-300 border-b border-gray-40 py-8">
           <a href="/">
             <img src={logo} alt="App logo" className='h-40 w-40'/>
           </a>
@@ -16,9 +16,9 @@ const Nav = () => {
                 className="HAMBURGER-ICON absolute space-y-2 right-6 "
                 onClick={() => setIsNavOpen((prev) => !prev)} 
               >
-                <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
               </div>
     
               <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}> 
@@ -76,7 +76,7 @@ const Nav = () => {
             height: 100vh;
             top: 0;
             left: 0;
-            background: white;
+            background: rgb(255 237 213);
             z-index: 10;
             display: flex;
             flex-direction: column;
