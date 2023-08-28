@@ -1,25 +1,28 @@
-import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 import HomePage from './pages/Home'
+import RootLayout from './pages/Root'
+import ErrorPage from './pages/Error'
 
 import WodPage from './pages/Wod'
 import PrevWodPage from './pages/PrevWod'
 import AboutPage from './pages/About'
 
 
-const routeDefintions = createRoutesFromElements(
-	<Route>
-		<Route path="/" element={<HomePage />} />
-		<Route path="/wod" element={<WodPage />} />
-		<Route path="/previous" element={<PrevWodPage />} />
-		<Route path="/about" element={<AboutPage />} />
-		
-	</Route>
-
-);
-
-
-const router = createBrowserRouter(routeDefintions);
+const router = createBrowserRouter([
+	{
+	  path: '/',
+	  element: <RootLayout />,
+	  errorElement: <ErrorPage />,
+	  children: [
+		{ index: true, element: <HomePage /> },
+		{ path: 'wod', element: <WodPage /> },
+		{ path: 'previous', element: <PrevWodPage /> },
+		{ path: 'about', element: <AboutPage />}
+	  ]
+	},
+  ])
+  
 
 function App() {
 	return (

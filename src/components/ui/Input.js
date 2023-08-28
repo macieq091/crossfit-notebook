@@ -1,4 +1,4 @@
-// import classes from '../ui/Input.module.css'
+
 const Input = () => {
 	return (
 		<div className="flex w-full pb-5 pt-5 bg-orange-100 font-['Permanent_marker'] ">
