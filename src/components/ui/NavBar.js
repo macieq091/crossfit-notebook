@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import logo from '../../assets/images/logo.png'
 
@@ -7,9 +8,9 @@ const Nav = () => {
     const [isNavOpen, setIsNavOpen] = useState(false)
     return (
         <div className="relative flex items-center justify-between  bg-orange-300 border-b border-gray-40 py-8 font-['Permanent_marker']">
-          <a href="/">
+          <Link to="/">
             <img src={logo} alt="App logo" className="h-40 w-40 lg:relative left-50"/>
-          </a>
+          </Link>
           <nav>
             <section className="MOBILE-MENU flex lg:hidden">
               <div
@@ -41,13 +42,13 @@ const Nav = () => {
                 </div>
                 <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
                   <li className="border-b border-gray-400 my-8 uppercase">
-                    <a href="/about">About</a>
+                    <Link to="/about">About</Link>
                   </li>
                   <li className="border-b border-gray-400 my-8 uppercase">
-                    <a href="/WOD">wod</a>
+                    <Link to="/WOD">wod</Link>
                   </li>
                   <li className="border-b border-gray-400 my-8 uppercase">
-                    <a href="/previous">Previous wod</a>
+                    <Link to="/previous">Previous wod</Link>
                   </li>
                 </ul>
               </div>
@@ -55,13 +56,13 @@ const Nav = () => {
     
             <ul className="DESKTOP-MENU hidden space-x-8 lg:flex absolute right-10 ">
               <li>
-                <a href="/about">About</a>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <a href="/wod">wod</a>
+                <Link to="/wod">wod</Link>
               </li>
               <li>
-                <a href="/previous">previous wod</a>
+                <Link to="/previous">previous wod</Link>
               </li>
             </ul>
           </nav>
