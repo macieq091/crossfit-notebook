@@ -1,20 +1,30 @@
-import Input from './components/ui/Input'
-import Main from './components/layout/Main'
-import Nav from './components/ui/NavBar'
+import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom'
 
-import { Fragment } from 'react'
+import HomePage from './pages/Home'
+
+import WodPage from './pages/Wod'
+import PrevWodPage from './pages/PrevWod'
+import AboutPage from './pages/About'
+
+
+const routeDefintions = createRoutesFromElements(
+	<Route>
+		<Route path="/" element={<HomePage />} />
+		<Route path="/wod" element={<WodPage />} />
+		<Route path="/previous" element={<PrevWodPage />} />
+		<Route path="/about" element={<AboutPage />} />
+		
+	</Route>
+
+);
+
+
+const router = createBrowserRouter(routeDefintions);
 
 function App() {
 	return (
-		<Fragment>
-			
-				<Nav />
-
-				<Input />
-
-				<Main />
+		<RouterProvider router={router} />
 		
-		</Fragment>
 	)
 }
 

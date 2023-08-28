@@ -6,9 +6,9 @@ import logo from '../../assets/images/logo.png'
 const Nav = () => {
     const [isNavOpen, setIsNavOpen] = useState(false)
     return (
-        <div className="flex items-center justify-between bg-orange-300 border-b border-gray-40 py-8">
+        <div className="relative flex items-center justify-between  bg-orange-300 border-b border-gray-40 py-8 font-['Permanent_marker']">
           <a href="/">
-            <img src={logo} alt="App logo" className='h-40 w-40'/>
+            <img src={logo} alt="App logo" className="h-40 w-40 lg:relative left-50"/>
           </a>
           <nav>
             <section className="MOBILE-MENU flex lg:hidden">
@@ -53,7 +53,7 @@ const Nav = () => {
               </div>
             </section>
     
-            <ul className="DESKTOP-MENU hidden space-x-8 lg:flex absolute right-10">
+            <ul className="DESKTOP-MENU hidden space-x-8 lg:flex absolute right-10 ">
               <li>
                 <a href="/about">About</a>
               </li>

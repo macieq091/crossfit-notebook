@@ -5,12 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        "primary-color": "var(--primary-color)",
-        "secondary-color": "var(--secondary-color)",
-        "tertinary-color": "var(--tertinary-color)",
-        "quaternary-color": "var(--quaternary-color)",
-      }
+      fontFamily: {
+        'Permanent Marker' : ['Permanent Marker', 'sans-serif']
+        
+      },
     },
   },
   plugins: [
