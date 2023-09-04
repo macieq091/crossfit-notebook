@@ -20,6 +20,17 @@ const Form = () => {
 		}
     }
 
+	const onButtonNextHandler = () => {
+		setPage(currPage => currPage + 1)
+
+		
+	}
+	const onButtonPrevHandler = () => {
+		setPage(currPage => currPage - 1)
+
+		
+	}
+
 	return (
 		<div className="parent-container flex items-center justify-center p-5 bg-orange-100">
 			<div className="form flex flex-col items-center w-1/2 h-full p-5 bg-orange-100 font-['Permanent_marker'] border-2 border-orange-200 rounded-xl ">
@@ -33,8 +44,8 @@ const Form = () => {
 				<div className="body flex flex-col items-center m-0 p-0 font-['Permanent_marker']">{PageDisplay()}</div>
 				<div className="footer flex items-center">
 				
-					<Button disabled={page === 0} onClick={() => setPage(currPage => currPage - 1)}>Prev</Button>
-					<Button disabled={page === FormTitles.length -1} onClick={() => setPage(currPage => currPage + 1)}>Next</Button>
+					<Button disabled={page === 0} onClick={onButtonPrevHandler}>Prev</Button>
+					<Button disabled={page === FormTitles.length -1} onClick={onButtonNextHandler}>Next</Button>
 				</div>
 			</div>
 		</div>
