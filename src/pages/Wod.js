@@ -1,12 +1,16 @@
 
-import Input from "../components/ui/Input"
+import Form from "../components/Form"
 import Main from "../components/layout/Main"
 
-function WodPage() {
+function WodPage(props) {
     return(
         <>
            
-            <Input />
+           <div className='stepWrapper w-full m'>
+            <Form />
+            
+
+           </div>
             <Main />
 
         </>

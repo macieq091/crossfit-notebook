@@ -1,7 +1,7 @@
+import React from "react";
 
 
-
-const Main = () => {
+const Main = (props) => {
 	return (
 		<>
 			<div className="w-full h-screen text-center bg-orange-100 overflow-hidden font-['Permanent_marker']" >

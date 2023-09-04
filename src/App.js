@@ -6,8 +6,7 @@ import ErrorPage from './pages/Error'
 
 import WodPage from './pages/Wod'
 import PrevWodPage from './pages/PrevWod'
-import AboutPage from './pages/About'
-
+import AboutPage from './pages/about'
 
 const router = createBrowserRouter([
 	{
