@@ -7,6 +7,7 @@ import Button from "./ui/Button"
 const Form = () => {
 	const [page, setPage] = useState(0);
 	
+	
 
 	const FormTitles = ["Warm-Up", "Strenght", "WOD"];
 
@@ -24,9 +25,16 @@ const Form = () => {
 		setPage(currPage => currPage + 1)
 
 		
+
+		
 	}
 	const onButtonPrevHandler = () => {
 		setPage(currPage => currPage - 1)
+
+		
+
+			
+
 
 		
 	}
